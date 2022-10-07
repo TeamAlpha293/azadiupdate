@@ -43,7 +43,10 @@
                                 transition: all 0.2s ease-in-out;  
                                 appearance: none;  
                                 -webkit-appearance: none;">
-                                  <option value="">--Select--</option>
+                                  <option value="" id="null">--Select--</option>
+                                  <option value="" id="DDO">DDO</option>
+                                  <option value="" id="TDO">TDO</option>
+                                  <option value="" id="TALATI">TALATI</option>
                                 </select>
                               </div> 
                             </form>
@@ -62,29 +65,21 @@
                                     transition: all 0.2s ease-in-out;  
                                     appearance: none;  
                                     -webkit-appearance: none;">
-                                      <option value="">--Select--</option>
+                                      <option value="" id="null">--Select--</option>
+                                      <option value="" id="Electricity">Electricity</option>
+                                      <option value="" id="Corruption">Corruption</option>
+                                      <option value="" id="Funding">Funding</option>
+                                      <option value="" id="Transportation">Transportation</option>
+                                      <option value="" id="Land acquried">Land acquried</option>
+                                      <option value="" id="Water Management">Water Management</option>
+                                      <option value="" id="Cleanliness">Cleanliness</option>
+                                      <option value="" id="Other">Other</option>
+                                      
                                     </select>
                                   </div> 
                                 </form> 
                         </div>
                         <div class="container fw-bold" style="font-size: 15px;">
-                            Type
-                            <form class="was-validated">
-                                <div class="mb-3">
-                                    <select class="form-select" id="chapter" required aria-label="select example" style="
-                                    border-radius: 20px;
-                                    border: none;
-                                    margin-right: 8px;  
-                                    box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;  
-                                    width: 100%;  
-                                    box-sizing: border-box;  
-                                    transition: all 0.2s ease-in-out;  
-                                    appearance: none;  
-                                    -webkit-appearance: none;">
-                                      <option value="">--Select--</option>
-                                    </select>
-                                  </div> 
-                                </form> 
                         </div>
                         <div class="container fw-bold" style="font-size: 15px;">x
                             Discription
@@ -173,26 +168,6 @@
 <script src="response.js"></script>
 <script src="chat.js"></script>
 <script>
-  var subjectObject = {
-                                "DDO": {
-                                    "Electricity": ["Required Street light"],
-                                    "Corruption": ["Asking bribe","Misuse of power"],
-                                    "Funding" :[],
-                                    "Other":[]
-                                },
-                                "TDO": {
-                                    "Transportation": ["Roads"],
-                                    "Electricity":["Street light not working"],
-                                    "Land acquried": ["Occupation of land illegally"],
-                                    "Corruption": ["Asking for bribe","Misuse of power"],
-                                    "Other":[]
-                                },
-                                "TALATI": {
-                                    "Water Management": ["Leakage"],
-                                    "Cleanliness": ["Sewage","Treefall","Water filled in pit","Roads are not cleaned"],
-                                    "Other": []
-                                }
-                            }
                             window.onload = function () {
                                 var subjectSel = document.getElementById("subject");
                                 var topicSel = document.getElementById("topic");
